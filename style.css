@@ -105,3 +105,46 @@ body {
     margin: 0;
     padding: 0;
 }
+
+.rectangle-top{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border-top: 1px solid #FF0070;
+    border-right: 1px solid #FF0070;
+    width: 25px;
+    height: 25px;
+}
+.rectangle-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    border-bottom: 1px solid #FF0070;
+    border-left: 1px solid #FF0070;
+    width: 25px;
+    height: 25px;
+}
+.lamp{
+    position: relative;
+    top: 7px;
+    right: -8px;
+    height: 9px;
+    width: 9px;
+    border-radius: 50%;
+    background-color: #FF0070;
+    box-shadow: 0px 0px 4px 2px #FF0070;
+}
+
+.lamp-text {
+    font-family: PlexMono-Reg;
+    font-size: 18px;
+    width: 33px;
+    color: #FF0070;
+    padding: 0;
+    margin: 0;
+    height: 26px;
+    width: 52px;
+    position: absolute;
+    top: 20px;
+    right: 29px;
+}
