@@ -10,8 +10,49 @@
     src: url(./assets/fonts/IBMPlexMono-Bold.ttf);
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
 .background {
     background-image: url(./assets/images/cover-image-dark.png);
-    width: 1229px;
+    width: 100vw;
     height: 768px;
+}
+
+.theme-sw {
+    display: block;
+    padding-top: 20px;
+    text-align: center;
+}
+
+.theme-b {
+    font-family: PlexMono-Reg;
+    font-size: 18px;
+    color: #FF0070;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    margin: 0 10px;    
+}
+
+.theme-b-p {
+    font-family: PlexMono-Reg;
+    font-size: 18px;
+    color: #FF0070;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    overflow: hidden;
+    outline: none;
+    border: 1px, solid, #FF0070;
+    margin: 0 10px;
+    padding-left: 13px;
+    padding-right: 13px;
+    padding-top: 1.5px;
+    padding-bottom: 1.5px;
 }
