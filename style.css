@@ -11,20 +11,23 @@
 }
 
 body {
+    width: 1024px;
+    height: 768px;
     margin: 0;
     padding: 0;
 }
 
 .background {
     background-image: url(./assets/images/cover-image-dark.png);
-    width: 100vw;
+    width: 1024px;
     height: 768px;
+    position: relative;
 }
 
 .theme-sw {
-    display: block;
+    display: flex;
     padding-top: 20px;
-    text-align: center;
+    justify-content: center;
 }
 
 .theme-b {
@@ -55,4 +58,37 @@ body {
     padding-right: 13px;
     padding-top: 1.5px;
     padding-bottom: 1.5px;
+}
+
+.main-header {
+    font-family: PlexMono-Bold;
+    font-size: 157px;
+    color: #DB00FF;
+    text-shadow: 4px 4px #FF0070;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-disc {
+    position: absolute;
+    bottom: 135px;
+    right: 20px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 491px;
+    height: 70px;
+}
+.header-disc > p {
+    font-family: PlexMono-Bold;
+    font-size: 18px;
+    color: #000028;
+    background-color: #FF0070;
+    text-align: left;
+    vertical-align: text-top;
+    margin: 0;
+    padding: 0;
 }
