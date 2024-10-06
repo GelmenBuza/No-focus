@@ -1,0 +1,17 @@
+@font-face {
+    font-family: PlexMono-Reg;
+    font-weight: 400;
+    src: url(./assets/fonts/IBMPlexMono-Regular.ttf);
+}
+
+@font-face {
+    font-family: PlexMono-Bold;
+    font-weight: 700;
+    src: url(./assets/fonts/IBMPlexMono-Bold.ttf);
+}
+
+.background {
+    background-image: url(./assets/images/cover-image-dark.png);
+    width: 1229px;
+    height: 768px;
+}
