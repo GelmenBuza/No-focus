@@ -226,3 +226,47 @@ body {
     width: 648.92px;
     margin-top: 10px;
 }
+
+.second_section {
+    width: 1024px;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.second_main_div {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.content_second {
+    display: flex;
+    flex-direction: row;
+}
+
+.heder-second {
+    font-family: PlexMono-Bold;
+    font-size: 18px;
+    color: var(--purple);
+    width: 315px;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 20px;
+}
+
+.text-p-second {
+    font-family: PlexMono-Reg;
+    font-size: 18px;
+    line-height: 0,77;
+    letter-spacing: 0%;
+    color: var(--liter);
+    margin: 0;
+    margin-top: 10px;
+}
+
+.div_colum {
+    margin: 0 10px;
+    width: 315px;
+}
