@@ -331,10 +331,6 @@ body {
     margin-top: 20px;
 }
 
-.content-third_text {
-
-}
-
 .text-p-third {
     font-family: PlexMono-Reg;
     font-size: 18px;
@@ -343,3 +339,70 @@ body {
     margin-top: 10px;
 }
 
+/* Fourth section */
+
+.fourth_section {
+    width: 1024px;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.fourth_main_div {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.fourth_header {
+    background-color: #FF0070;
+    font-family: PlexMono-Bold;
+    font-size: 18px;
+    color: var(--bg-color);
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+.fourth_content {
+    display: grid;
+    grid-template-areas: 
+    "first-img first-img second-img"
+    "fourth-img third-img second-img"
+    "fourth-img fifth-img fifth-img"
+    "fourth-img fifth-img fifth-img";
+    gap: 20px;
+}
+
+.first-img {
+    width: 649px;
+    height: 260px;
+    grid-area: first-img;
+}
+
+.second-img {
+    width: 315px;
+    height: 595px;
+    grid-area: second-img;
+}
+
+.third-img {
+    width: 315px;
+    height: 315px;
+    grid-area: third-img;
+}
+
+.fourth-img {
+    width: 315px;
+    height: 768px;
+    grid-area: fourth-img;
+}
+
+.fifth-img {
+    width: 649px;
+    height: 428px;
+    grid-area: fifth-img;
+}
