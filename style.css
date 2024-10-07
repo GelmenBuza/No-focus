@@ -162,7 +162,7 @@ body {
 }
 
 /* Main section */
-
+/* First section */
 .first_section {
     width: 1024px;
     background-color: var(--bg-color);
@@ -220,6 +220,9 @@ body {
     color: var(--liter);
     text-decoration: none;
 }
+
+/* Second section */
+
 .second_text {
     display: flex;
     flex-direction: column;
@@ -259,8 +262,6 @@ body {
 .text-p-second {
     font-family: PlexMono-Reg;
     font-size: 18px;
-    line-height: 0,77;
-    letter-spacing: 0%;
     color: var(--liter);
     margin: 0;
     margin-top: 10px;
@@ -270,3 +271,75 @@ body {
     margin: 0 10px;
     width: 315px;
 }
+
+/* Third section */
+
+.third_section {
+    width: 1024px;
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
+}
+
+.third_main_div {
+    padding-top: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+    position: relative;
+}
+
+.fish {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    font-family: PlexMono-Bold;
+    font-size: 18px;
+    color: var(--purple);
+    margin: 0;
+    padding: 0;
+    width: 315px;
+    height: 98px;
+}
+
+.content-third {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-left: 355px;
+}
+
+.header-text-h {
+    background-color: #FF0070;
+    font-family: PlexMono-Bold;
+    font-size: 18px;
+    color: var(--bg-color);
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.header-text- {
+    font-family: PlexMono-Reg;
+    font-size: 18px;
+    color: #000028;
+    text-align: left;
+    width: 100%;
+    background-color: #FF0070;
+    margin: 0;
+    margin-top: 20px;
+}
+
+.content-third_text {
+
+}
+
+.text-p-third {
+    font-family: PlexMono-Reg;
+    font-size: 18px;
+    color: var(--liter);
+    margin: 0;
+    margin-top: 10px;
+}
+
