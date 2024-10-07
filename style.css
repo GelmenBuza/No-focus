@@ -48,6 +48,10 @@ body {
     border: 1px, solid, transparent;
 }
 
+.link-b {
+    text-decoration: none;
+}
+
 .theme-b:hover {
     border: 1px, solid, #FF0070;
 }
@@ -68,7 +72,7 @@ body {
     border: 1px, solid, #FF0070;
     margin: 0 10px;
     padding-left: 13px;
-    padding-right: 13px;
+    padding-right: 13px;    
     padding-top: 1.5px;
     padding-bottom: 1.5px;
 }
