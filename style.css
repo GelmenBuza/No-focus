@@ -14,7 +14,6 @@
     --purple: #FF0070;
     --pink: #DB00FF;
     --bg-color: #000028;
-    --lite-pink: #F1B2CE;
     --liter: #F1B2CE;
 }
 
@@ -40,7 +39,7 @@ body {
 .theme-b {
     font-family: PlexMono-Reg;
     font-size: 18px;
-    color: #FF0070;
+    color: var(--purple);
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
@@ -59,23 +58,23 @@ body {
 }
 
 .theme-b:hover {
-    border: 1px, solid, #FF0070;
+    border: 1px, solid, var(--purple);
 }
 
 .theme-b:focus {
-    border-bottom: 1px, solid, #FF0070;
+    border-bottom: 1px, solid, var(--purple);
 }
 
 .theme-b-p {
     font-family: PlexMono-Reg;
     font-size: 18px;
-    color: #FF0070;
+    color: var(--purple);
     background-color: transparent;
     background-repeat: no-repeat;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    border: 1px, solid, #FF0070;
+    border: 1px, solid, var(--purple);
     margin: 0 5px;
     padding-left: 13px;
     padding-right: 13px;
@@ -89,8 +88,8 @@ body {
 .main-header {
     font-family: PlexMono-Bold;
     font-size: 157px;
-    color: #DB00FF;
-    text-shadow: 4px 4px #FF0070;
+    color: var(--pink);
+    text-shadow: 4px 4px var(--purple);
     margin: 0;
     padding: 0;
     position: absolute;
@@ -107,12 +106,13 @@ body {
     display: flex;
     width: 491px;
     height: 70px;
+    line-height: 23.4px;
 }
 .header-disc > p {
     font-family: PlexMono-Bold;
     font-size: 18px;
-    color: #000028;
-    background-color: #FF0070;
+    color: var(--bg-color);
+    background-color: var(--purple);
     text-align: left;
     vertical-align: text-top;
     margin: 0;
@@ -123,8 +123,8 @@ body {
     position: absolute;
     top: 20px;
     right: 20px;
-    border-top: 1px solid #FF0070;
-    border-right: 1px solid #FF0070;
+    border-top: 1px solid var(--purple);
+    border-right: 1px solid var(--purple);
     width: 25px;
     height: 25px;
 }
@@ -132,8 +132,8 @@ body {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    border-bottom: 1px solid #FF0070;
-    border-left: 1px solid #FF0070;
+    border-bottom: 1px solid var(--purple);
+    border-left: 1px solid var(--purple);
     width: 25px;
     height: 25px;
 }
@@ -144,15 +144,15 @@ body {
     height: 9px;
     width: 9px;
     border-radius: 50%;
-    background-color: #FF0070;
-    box-shadow: 0px 0px 4px 2px #FF0070;
+    background-color: var(--purple);
+    box-shadow: 0px 0px 4px 2px var(--purple);
 }
 
 .lamp-text {
     font-family: PlexMono-Reg;
     font-size: 18px;
     width: 33px;
-    color: #FF0070;
+    color: var(--purple);
     padding: 0;
     margin: 0;
     height: 26px;
@@ -204,8 +204,8 @@ body {
 .header-text {
     font-family: PlexMono-Bold;
     font-size: 18px;
-    color: #000028;
-    background-color: #FF0070;
+    color: var(--bg-color);
+    background-color: var(--purple);
     margin: 0;
 }
 
@@ -214,12 +214,12 @@ body {
     font-size: 18px;
     color: var(--liter);
     margin: 0;
-    margin-top: 9px;
+    margin-top: 10px;
     line-height: 23.5px;
 }
 
 .link {
-    text-shadow: 2px 2px #FF0070;
+    text-shadow: 2px 2px var(--purple);
     color: var(--liter);
     text-decoration: none;
 }
@@ -334,7 +334,7 @@ body {
 }
 
 .header-text-h {
-    background-color: #FF0070;
+    background-color: var(--purple);
     font-family: PlexMono-Bold;
     font-size: 18px;
     color: var(--bg-color);
@@ -347,10 +347,10 @@ body {
 .header-text- {
     font-family: PlexMono-Reg;
     font-size: 18px;
-    color: #000028;
+    color: var(--bg-color);
     text-align: left;
     width: 100%;
-    background-color: #FF0070;
+    background-color: var(--purple);
     margin: 0;
     margin-top: 20px;
 }
@@ -361,7 +361,7 @@ body {
     color: var(--liter);
     margin: 0;
     margin-top: 10px;
-    line-height: 23.4px;
+    line-height: 23.45px;
 }
 
 /* Fourth section */
@@ -382,7 +382,7 @@ body {
 }
 
 .fourth_header {
-    background-color: #FF0070;
+    background-color: var(--purple);
     font-family: PlexMono-Bold;
     font-size: 18px;
     color: var(--bg-color);
@@ -457,7 +457,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--pink);
-    text-shadow: 2px 2px #FF0070;
+    text-shadow: 2px 2px var(--purple);
 }
 
 .rectangle-top-foot {
