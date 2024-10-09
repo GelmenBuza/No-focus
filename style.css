@@ -11,10 +11,30 @@
 }
 
 :root {
+    --main-head-text: #FF0070;
     --purple: #FF0070;
     --pink: #DB00FF;
     --bg-color: #000028;
     --liter: #F1B2CE;
+    --background-image: url(./assets/images/cover-image-dark.png);
+}
+
+body.white-theme {
+    --main-head-text: #FF0070;
+    --purple: #FF0070;
+    --pink: #FFC2E6;
+    --bg-color: #353430;
+    --liter: #F1B2CE;
+    --background-image: url(./assets/images/cover-image-dark.png);
+}
+
+body.black-theme {
+    --main-head-text: #FF0070;
+    --purple: #FF0070;
+    --pink: #DB00FF;
+    --bg-color: #000028;
+    --liter: #F1B2CE;
+    --background-image: url(./assets/images/cover-image-dark.png);
 }
 
 body {
@@ -24,7 +44,7 @@ body {
 }
 /* Heder section */
 .background {
-    background-image: url(./assets/images/cover-image-dark.png);
+    background-image: var(--background-image);
     width: 1024px;
     height: 768px;
     position: relative;
@@ -37,6 +57,7 @@ body {
 }
 
 .theme-b {
+    display: flex;
     font-family: PlexMono-Reg;
     font-size: 18px;
     color: var(--purple);
@@ -49,12 +70,9 @@ body {
     margin: 0 5px; 
     padding-left: 13px;
     padding-right: 13px;
-    padding-top: 0;
-    padding-bottom: 4px;
-    line-height: 0;
-    letter-spacing: 0;
     border: 1px, solid, transparent;
-    height: 26px;
+    height: 24px;
+    text-decoration: none;
 }
 
 .theme-b:hover {
@@ -62,34 +80,33 @@ body {
 }
 
 .theme-b:focus {
-    border-bottom: 1px, solid, var(--purple);
-}
-
-.theme-b-p {
+    display: flex;
     font-family: PlexMono-Reg;
     font-size: 18px;
     color: var(--purple);
     background-color: transparent;
     background-repeat: no-repeat;
+    border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    border: 1px, solid, var(--purple);
-    margin: 0 5px;
+    margin: 0 5px; 
     padding-left: 13px;
     padding-right: 13px;
-    padding-top: 0;
-    padding-bottom: 4px;
-    line-height: 0;
-    letter-spacing: 0;
-    height: 26px;
+    border: 1px, solid, var(--purple);
+    height: 24px;
+    text-decoration: none;
+}
+
+.theme-b:checked {
+
 }
 
 .main-header {
     font-family: PlexMono-Bold;
     font-size: 157px;
     color: var(--pink);
-    text-shadow: 4px 4px var(--purple);
+    text-shadow: 4px 4px var(--main-head-text);
     margin: 0;
     padding: 0;
     position: absolute;
@@ -119,7 +136,7 @@ body {
     padding: 0;
 }
 
-.rectangle-top{
+.rectangle-top {
     position: absolute;
     top: 20px;
     right: 20px;
