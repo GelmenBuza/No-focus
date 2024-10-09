@@ -58,10 +58,6 @@ body {
     height: 26px;
 }
 
-.link-b {
-    text-decoration: none;
-}
-
 .theme-b:hover {
     border: 1px, solid, #FF0070;
 }
@@ -226,6 +222,14 @@ body {
     text-shadow: 2px 2px #FF0070;
     color: var(--liter);
     text-decoration: none;
+}
+
+.link:hover {
+    border-bottom: 1px solid var(--liter);
+}
+
+.link:focus {
+    border: 1px solid var(--liter);
 }
 
 /* Second section */
