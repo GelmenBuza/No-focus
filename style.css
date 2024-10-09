@@ -1,498 +1,605 @@
 @font-face {
-    font-family: PlexMono-Reg;
-    font-weight: 400;
-    src: url(./assets/fonts/IBMPlexMono-Regular.ttf);
+  font-family: PlexMono-Reg;
+  font-weight: 400;
+  src: url(./assets/fonts/IBMPlexMono-Regular.ttf);
 }
 
 @font-face {
-    font-family: PlexMono-Bold;
-    font-weight: 700;
-    src: url(./assets/fonts/IBMPlexMono-Bold.ttf);
+  font-family: PlexMono-Bold;
+  font-weight: 700;
+  src: url(./assets/fonts/IBMPlexMono-Bold.ttf);
 }
 
-:root {
-    --main-head-text: #FF0070;
-    --purple: #FF0070;
-    --pink: #DB00FF;
-    --bg-color: #000028;
-    --liter: #F1B2CE;
-    --background-image: url(./assets/images/cover-image-dark.png);
+.white-theme {
+  --main-head-text: #ff0070;
+  --purple: #FF8DCB;
+  --pink: #ffc2e6;
+  --font-color: #353430;
+  --bg-color: #FFF1F7;
+  --liter: #353430;
+  --header-section-text: #353430;
+  --theme-swith-color: #353430;
+  --background-image: url(/assets/images/cover-image-light.png);
 }
 
-body.white-theme {
-    --main-head-text: #FF0070;
-    --purple: #FF0070;
-    --pink: #FFC2E6;
-    --bg-color: #353430;
-    --liter: #F1B2CE;
-    --background-image: url(./assets/images/cover-image-dark.png);
+.white-theme .lamp-text{
+  display: none;
 }
 
-body.black-theme {
-    --main-head-text: #FF0070;
-    --purple: #FF0070;
-    --pink: #DB00FF;
-    --bg-color: #000028;
-    --liter: #F1B2CE;
-    --background-image: url(./assets/images/cover-image-dark.png);
+.white-theme .lamp {
+  display: none;
+}
+
+.white-theme .theme-w {
+  display: flex;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--theme-swith-color);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin: 0 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border: 1px, solid, var(--theme-swith-color);
+  text-decoration: none;
+  line-height: 18px;
+  letter-spacing: 0;
+  padding-bottom: 5px;
+}
+
+.black-theme .theme-b {
+  display: flex;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--theme-swith-color);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin: 0 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border: 1px, solid, var(--theme-swith-color);
+  text-decoration: none;
+  line-height: 18px;
+  letter-spacing: 0;
+  padding-bottom: 5px;
+}
+
+.black-theme {
+  --main-head-text: #ff0070;
+  --purple: #ff0070;
+  --header-section-text: #ff0070;
+  --pink: #db00ff;
+  --bg-color: #000028;
+  --font-color: #000028;
+  --liter: #f1b2ce;
+  --theme-swith-color: #ff0070;
+  --background-image: url(./assets/images/cover-image-dark.png);
 }
 
 body {
-    width: 1024px;
-    margin: 0;
-    padding: 0;
+  width: 1024px;
+  margin: 0;
+  padding: 0;
 }
+
 /* Heder section */
 .background {
-    background-image: var(--background-image);
-    width: 1024px;
-    height: 768px;
-    position: relative;
+  background-image: var(--background-image);
+  width: 1024px;
+  height: 768px;
+  position: relative;
 }
 
 .theme-sw {
-    display: flex;
-    padding-top: 20px;
-    justify-content: center;
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
 }
 
 .theme-b {
+  display: flex;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--theme-swith-color);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin: 0 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border: 1px, solid, transparent;
+  text-decoration: none;
+  line-height: 18px;
+  letter-spacing: 0;
+  padding-bottom: 5px;
+}
+
+.theme-w {
     display: flex;
     font-family: PlexMono-Reg;
     font-size: 18px;
-    color: var(--purple);
+    color: var(--theme-swith-color);
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    margin: 0 5px; 
+    margin: 0 5px;
     padding-left: 13px;
     padding-right: 13px;
     border: 1px, solid, transparent;
-    height: 24px;
     text-decoration: none;
+    line-height: 18px;
+    letter-spacing: 0;
+    padding-bottom: 5px;
 }
 
-.theme-b:hover {
-    border: 1px, solid, var(--purple);
-}
-
-.theme-b:focus {
+.theme-auto {
     display: flex;
     font-family: PlexMono-Reg;
     font-size: 18px;
-    color: var(--purple);
+    color: var(--theme-swith-color);
     background-color: transparent;
     background-repeat: no-repeat;
     border: none;
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    margin: 0 5px; 
+    margin: 0 5px;
     padding-left: 13px;
     padding-right: 13px;
-    border: 1px, solid, var(--purple);
-    height: 24px;
+    border: 1px, solid, transparent;
     text-decoration: none;
+    line-height: 18px;
+    letter-spacing: 0;
+    padding-bottom: 5px;
 }
 
-.theme-b:checked {
+.theme-b:hover {
+  border: 1px, solid, var(--theme-swith-color);
+}
 
+.theme-b:focus {
+  display: flex;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--theme-swith-color);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin: 0 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border: 1px, solid, var(--theme-swith-color);
+}
+
+.theme-w:hover {
+  border: 1px, solid, var(--theme-swith-color);
+}
+
+.theme-w:focus {
+  display: flex;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--theme-swith-color);
+  background-color: transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
+  margin: 0 5px;
+  padding-left: 13px;
+  padding-right: 13px;
+  border: 1px, solid, var(--theme-swith-color);
 }
 
 .main-header {
-    font-family: PlexMono-Bold;
-    font-size: 157px;
-    color: var(--pink);
-    text-shadow: 4px 4px var(--main-head-text);
-    margin: 0;
-    padding: 0;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+  font-family: PlexMono-Bold;
+  font-size: 157px;
+  color: var(--pink);
+  text-shadow: 4px 4px var(--main-head-text);
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .header-disc {
-    position: absolute;
-    bottom: 135px;
-    right: 20px;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 491px;
-    height: 70px;
-    line-height: 23.4px;
+  position: absolute;
+  bottom: 135px;
+  right: 20px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 491px;
+  height: 70px;
+  line-height: 23.4px;
 }
 .header-disc > p {
-    font-family: PlexMono-Bold;
-    font-size: 18px;
-    color: var(--bg-color);
-    background-color: var(--purple);
-    text-align: left;
-    vertical-align: text-top;
-    margin: 0;
-    padding: 0;
+  font-family: PlexMono-Bold;
+  font-size: 18px;
+  color: var(--font-color);
+  background-color: var(--purple);
+  text-align: left;
+  vertical-align: text-top;
+  margin: 0;
+  padding: 0;
 }
 
 .rectangle-top {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    border-top: 1px solid var(--purple);
-    border-right: 1px solid var(--purple);
-    width: 25px;
-    height: 25px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  border-top: 1px solid var(--theme-swith-color);
+  border-right: 1px solid var(--theme-swith-color);
+  width: 25px;
+  height: 25px;
 }
 .rectangle-bottom {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    border-bottom: 1px solid var(--purple);
-    border-left: 1px solid var(--purple);
-    width: 25px;
-    height: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  border-bottom: 1px solid var(--theme-swith-color);
+  border-left: 1px solid var(--theme-swith-color);
+  width: 25px;
+  height: 25px;
 }
-.lamp{
-    position: relative;
-    top: 7px;
-    right: -8px;
-    height: 9px;
-    width: 9px;
-    border-radius: 50%;
-    background-color: var(--purple);
-    box-shadow: 0px 0px 4px 2px var(--purple);
+.lamp {
+  position: relative;
+  top: 7px;
+  right: -8px;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background-color: var(--purple);
+  box-shadow: 0px 0px 4px 2px var(--purple);
 }
 
 .lamp-text {
-    font-family: PlexMono-Reg;
-    font-size: 18px;
-    width: 33px;
-    color: var(--purple);
-    padding: 0;
-    margin: 0;
-    height: 26px;
-    width: 52px;
-    position: absolute;
-    top: 20px;
-    right: 29px;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  width: 33px;
+  color: var(--purple);
+  padding: 0;
+  margin: 0;
+  height: 26px;
+  width: 52px;
+  position: absolute;
+  top: 20px;
+  right: 29px;
 }
 
 /* Main section */
 /* First section */
 .first_section {
-    width: 1024px;
-    background-color: var(--bg-color);
-    margin: 0;
-    padding: 0;
+  width: 1024px;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
 }
 
 .first_main_div {
-    position: relative;
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100%;
+  position: relative;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
 }
 
 .why {
-    font-family: PlexMono-Bold;
-    font-size: 18px;
-    color: var(--purple);
-    width: 314.96px;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 60px;
-    left: 20px;
+  font-family: PlexMono-Bold;
+  font-size: 18px;
+  color: var(--header-section-text);
+  width: 314.96px;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 60px;
+  left: 20px;
 }
 
 .first_text {
-    display: flex;
-    flex-direction: column;
-    width: 648.92px;
-    margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 648.92px;
+  margin-bottom: 10px;
 }
 
 .header-text {
-    font-family: PlexMono-Bold;
-    font-size: 18px;
-    color: var(--bg-color);
-    background-color: var(--purple);
-    margin: 0;
+  font-family: PlexMono-Bold;
+  font-size: 18px;
+  color: var(--font-color);
+  background-color: var(--purple);
+  margin: 0;
 }
 
 .text-p-first {
-    font-family: PlexMono-Reg;
-    font-size: 18px;
-    color: var(--liter);
-    margin: 0;
-    margin-top: 10px;
-    line-height: 23.5px;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--liter);
+  margin: 0;
+  margin-top: 10px;
+  line-height: 23.5px;
 }
 
 .link {
-    text-shadow: 2px 2px var(--purple);
-    color: var(--liter);
-    text-decoration: none;
+  text-shadow: 2px 2px var(--purple);
+  color: var(--liter);
+  text-decoration: none;
 }
 
 .link:hover {
-    border-bottom: 1px solid var(--liter);
+  border-bottom: 1px solid var(--liter);
 }
 
 .link:focus {
-    border: 1px solid var(--liter);
+  border: 1px solid var(--liter);
 }
 
 /* Second section */
 
 .second_text {
-    display: flex;
-    flex-direction: column;
-    width: 648.92px;
-    margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 648.92px;
+  margin-top: 10px;
 }
 
 .second_section {
-    width: 1024px;
-    background-color: var(--bg-color);
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
+  width: 1024px;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
 }
 
 .second_main_div {
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100%;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
 }
 
 .content_second {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .heder-second {
-    font-family: PlexMono-Bold;
-    font-size: 18px;
-    color: var(--purple);
-    width: 315px;
-    padding: 0;
-    margin: 0;
-    padding-bottom: 21px;
+  font-family: PlexMono-Bold;
+  font-size: 18px;
+  color: var(--header-section-text);
+  width: 315px;
+  padding: 0;
+  margin: 0;
+  padding-bottom: 21px;
 }
 
 .text-p-second {
-    font-family: PlexMono-Reg;
-    font-size: 18px;
-    color: var(--liter);
-    margin: 0;
-    margin-top: 10px;
-    line-height: 23.4px;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--liter);
+  margin: 0;
+  margin-top: 10px;
+  line-height: 23.4px;
 }
 
 .div_colum {
-    width: 315px;
+  width: 315px;
 }
 
 .m-10-r {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 
 .m-10-lr {
-    margin: 0px 10px;
+  margin: 0px 10px;
 }
 .m-10-l {
-    margin-left: 10px;
+  margin-left: 10px;
 }
 
 /* Third section */
 
 .third_section {
-    width: 1024px;
-    background-color: var(--bg-color);
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
+  width: 1024px;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
 }
 
 .third_main_div {
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100%;
-    position: relative;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
+  position: relative;
 }
 
 .fish {
-    position: absolute;
-    top: 60px;
-    left: 20px;
-    font-family: PlexMono-Bold;
-    font-size: 18px;
-    color: var(--purple);
-    margin: 0;
-    padding: 0;
-    width: 315px;
-    height: 98px;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  font-family: PlexMono-Bold;
+  font-size: 18px;
+  color: var(--header-section-text);
+  margin: 0;
+  padding: 0;
+  width: 315px;
+  height: 98px;
 }
 
 .content-third {
-    display: flex;
-    align-items: end;
-    flex-direction: column;
-    margin-left: 335px;
+  display: flex;
+  align-items: end;
+  flex-direction: column;
+  margin-left: 335px;
 }
 
 .header-text-h {
-    background-color: var(--purple);
-    font-family: PlexMono-Bold;
-    font-size: 18px;
-    color: var(--bg-color);
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  background-color: var(--purple);
+  font-family: PlexMono-Bold;
+  font-size: 18px;
+  color: var(--font-color);
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .header-text- {
-    font-family: PlexMono-Reg;
-    font-size: 18px;
-    color: var(--bg-color);
-    text-align: left;
-    width: 100%;
-    background-color: var(--purple);
-    margin: 0;
-    margin-top: 20px;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--font-color);
+  text-align: left;
+  width: 100%;
+  background-color: var(--purple);
+  margin: 0;
+  margin-top: 20px;
 }
 
 .text-p-third {
-    font-family: PlexMono-Reg;
-    font-size: 18px;
-    color: var(--liter);
-    margin: 0;
-    margin-top: 10px;
-    line-height: 23.45px;
+  font-family: PlexMono-Reg;
+  font-size: 18px;
+  color: var(--liter);
+  margin: 0;
+  margin-top: 10px;
+  line-height: 23.45px;
 }
 
 /* Fourth section */
 
 .fourth_section {
-    width: 1024px;
-    background-color: var(--bg-color);
-    margin: 0;
-    padding: 0;
-    padding-top: 20px;
+  width: 1024px;
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+  padding-top: 20px;
 }
 
 .fourth_main_div {
-    padding-top: 60px;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 100%;
+  padding-top: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  height: 100%;
 }
 
 .fourth_header {
-    background-color: var(--purple);
-    font-family: PlexMono-Bold;
-    font-size: 18px;
-    color: var(--bg-color);
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 20px;
+  background-color: var(--purple);
+  font-family: PlexMono-Bold;
+  font-size: 18px;
+  color: var(--font-color);
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
 }
 
 .fourth_content {
-    display: grid;
-    grid-template-areas: 
+  display: grid;
+  grid-template-areas:
     "first-img first-img second-img"
     "fourth-img third-img second-img"
     "fourth-img fifth-img fifth-img"
     "fourth-img fifth-img fifth-img";
-    gap: 20px;
+  gap: 20px;
 }
 
 .first-img {
-    width: 649px;
-    height: 260px;
-    grid-area: first-img;
+  width: 649px;
+  height: 260px;
+  grid-area: first-img;
 }
 
 .second-img {
-    width: 315px;
-    height: 595px;
-    grid-area: second-img;
+  width: 315px;
+  height: 595px;
+  grid-area: second-img;
 }
 
 .third-img {
-    width: 315px;
-    height: 315px;
-    grid-area: third-img;
+  width: 315px;
+  height: 315px;
+  grid-area: third-img;
 }
 
 .fourth-img {
-    width: 315px;
-    height: 768px;
-    grid-area: fourth-img;
+  width: 315px;
+  height: 768px;
+  grid-area: fourth-img;
 }
 
 .fifth-img {
-    width: 649px;
-    height: 428px;
-    grid-area: fifth-img;
+  width: 649px;
+  height: 428px;
+  grid-area: fifth-img;
 }
 
 /* Footer section */
 
 .foot {
-    width: 1024px;
-    height: 768px;
-    background-color: var(--bg-color);
-    padding-top: 60px;
+  width: 1024px;
+  height: 768px;
+  background-color: var(--bg-color);
+  padding-top: 60px;
 }
 
 .main_div_footer {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 .footer_text {
-    font-family: PlexMono-Bold;
-    font-size: 157px;
-    margin: 0;
-    padding: 0;
-    color: var(--pink);
-    text-shadow: 2px 2px var(--purple);
+  font-family: PlexMono-Bold;
+  font-size: 157px;
+  margin: 0;
+  padding: 0;
+  color: var(--pink);
+  text-shadow: 2px 2px var(--main-head-text);
 }
 
 .rectangle-top-foot {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    height: 25px;
-    width: 25px;
-    border-top: 1px solid var(--purple);
-    border-right: 1px solid var(--purple);
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 25px;
+  width: 25px;
+  border-top: 1px solid var(--theme-swith-color);
+  border-right: 1px solid var(--theme-swith-color);
 }
 
 .rectangle-bottom-foot {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    height: 25px;
-    width: 25px;
-    border-bottom: 1px solid var(--purple);
-    border-left: 1px solid var(--purple);
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  height: 25px;
+  width: 25px;
+  border-bottom: 1px solid var(--theme-swith-color);
+  border-left: 1px solid var(--theme-swith-color);
 }
