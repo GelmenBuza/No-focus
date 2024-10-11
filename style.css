@@ -43,7 +43,7 @@
   outline: none;
   margin: 0 5px;
   padding-left: 13px;
-  padding-right: 13px;
+  padding-right: 12px;
   border: 1px, solid, var(--theme-swith-color);
   text-decoration: none;
   line-height: 18px;
@@ -88,20 +88,34 @@ body {
   width: 1024px;
   margin: 0;
   padding: 0;
+  background-color: var(--bg-color);
 }
 
 /* Heder section */
 .background {
   background-image: var(--background-image);
+  background-repeat: no-repeat;
   width: 1024px;
   height: 768px;
   position: relative;
+  @media (width: 768px) {
+    width: 768px;
+    height: 1024px;
+    background-size: 1638px 1024px;
+    background-position-x: center;
+    opacity: 0.5;
+  }
 }
 
 .theme-sw {
   display: flex;
   padding-top: 20px;
   justify-content: center;
+  @media (width: 768px) {
+    padding-top: 192px;
+    align-items: end;
+    flex-direction: column;    
+  }
 }
 
 .theme-b {
@@ -115,7 +129,6 @@ body {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  margin: 0 5px;
   padding-left: 13px;
   padding-right: 13px;
   border: 1px, solid, transparent;
@@ -123,6 +136,13 @@ body {
   line-height: 18px;
   letter-spacing: 0;
   padding-bottom: 5px;
+}
+
+.theme-switch-margin {
+  margin: 0 5px;
+  @media (width: 768px) {
+    margin: 5px 0;
+  }
 }
 
 .theme-w {
@@ -136,7 +156,6 @@ body {
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    margin: 0 5px;
     padding-left: 13px;
     padding-right: 13px;
     border: 1px, solid, transparent;
@@ -157,7 +176,6 @@ body {
     cursor: pointer;
     overflow: hidden;
     outline: none;
-    margin: 0 5px;
     padding-left: 13px;
     padding-right: 13px;
     border: 1px, solid, transparent;
@@ -182,7 +200,6 @@ body {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  margin: 0 5px;
   padding-left: 13px;
   padding-right: 13px;
   border: 1px, solid, var(--theme-swith-color);
@@ -203,7 +220,6 @@ body {
   cursor: pointer;
   overflow: hidden;
   outline: none;
-  margin: 0 5px;
   padding-left: 13px;
   padding-right: 13px;
   border: 1px, solid, var(--theme-swith-color);
@@ -219,6 +235,9 @@ body {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+  @media (width: 768px) {
+    font-size: 120px;
+  }
 }
 
 .header-disc {
@@ -231,6 +250,11 @@ body {
   width: 491px;
   height: 70px;
   line-height: 23.4px;
+  @media (width: 768px) {
+    bottom: 183px;
+    width: 364px;
+    height: 117px;
+  }
 }
 .header-disc > p {
   font-family: PlexMono-Bold;
@@ -290,7 +314,6 @@ body {
 /* First section */
 .first_section {
   width: 1024px;
-  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
 }
@@ -367,7 +390,6 @@ body {
 
 .second_section {
   width: 1024px;
-  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -423,7 +445,6 @@ body {
 
 .third_section {
   width: 1024px;
-  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -492,7 +513,6 @@ body {
 
 .fourth_section {
   width: 1024px;
-  background-color: var(--bg-color);
   margin: 0;
   padding: 0;
   padding-top: 20px;
@@ -562,7 +582,6 @@ body {
 .foot {
   width: 1024px;
   height: 768px;
-  background-color: var(--bg-color);
   padding-top: 60px;
 }
 
