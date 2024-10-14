@@ -31,40 +31,14 @@
 }
 
 .white-theme .theme-w {
-  display: flex;
-  font-family: PlexMono-Reg;
-  font-size: 18px;
-  color: var(--theme-swith-color);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  padding-left: 13px;
-  padding-right: 12px;
   border: 1px, solid, var(--theme-swith-color);
-  text-decoration: none;
   line-height: 18px;
   letter-spacing: 0;
   padding-bottom: 5px;
 }
 
 .black-theme .theme-b {
-  display: flex;
-  font-family: PlexMono-Reg;
-  font-size: 18px;
-  color: var(--theme-swith-color);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  padding-left: 13px;
-  padding-right: 13px;
   border: 1px, solid, var(--theme-swith-color);
-  text-decoration: none;
   line-height: 18px;
   letter-spacing: 0;
   padding-bottom: 5px;
@@ -86,6 +60,19 @@ body {
   margin: 0;
   padding: 0;
   background-color: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.fonts-link-reg {
+  font-family: "PlexMono-Reg", "Times New Roman";
+  font-size: 18px;
+}
+
+.fonts-link-bold {
+  font-family: "PlexMono-Bold", "Times New Roman";
+  font-size: 18px;
 }
 
 /* Heder section */
@@ -129,107 +116,40 @@ body {
   }
 }
 
-.theme-b {
+.button-settings {
   display: flex;
-  font-family: PlexMono-Reg;
-  font-size: 18px;
   color: var(--theme-swith-color);
   background-color: transparent;
   background-repeat: no-repeat;
-  border: none;
   cursor: pointer;
   overflow: hidden;
   outline: none;
   padding-left: 13px;
   padding-right: 13px;
-  border: 1px, solid, transparent;
+  border: 1px solid transparent;
   text-decoration: none;
   line-height: 18px;
   letter-spacing: 0;
   padding-bottom: 5px;
 }
 
-.theme-w {
-  display: flex;
-  font-family: PlexMono-Reg;
-  font-size: 18px;
-  color: var(--theme-swith-color);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  padding-left: 13px;
-  padding-right: 13px;
-  border: 1px, solid, transparent;
-  text-decoration: none;
-  line-height: 18px;
-  letter-spacing: 0;
-  padding-bottom: 5px;
-}
-
-.theme-auto {
-  display: flex;
-  font-family: PlexMono-Reg;
-  font-size: 18px;
-  color: var(--theme-swith-color);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  padding-left: 13px;
-  padding-right: 13px;
-  border: 1px, solid, transparent;
-  text-decoration: none;
-  line-height: 18px;
-  letter-spacing: 0;
-  padding-bottom: 5px;
-}
-
-.theme-b:hover {
+.button-settings:hover {
   border: 1px, solid, var(--theme-swith-color);
 }
 
-.theme-auto:hover {
+.tbutton-settings:hover {
   border: 1px, solid, var(--theme-swith-color);
 }
 
-.theme-b:focus {
-  display: flex;
-  font-family: PlexMono-Reg;
-  font-size: 18px;
-  color: var(--theme-swith-color);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  padding-left: 13px;
-  padding-right: 13px;
+.button-settings:focus {
   border: 1px, solid, var(--theme-swith-color);
 }
 
-.theme-w:hover {
+.button-settings:hover {
   border: 1px, solid, var(--theme-swith-color);
 }
 
-.theme-w:focus {
-  display: flex;
-  font-family: PlexMono-Reg;
-  font-size: 18px;
-  color: var(--theme-swith-color);
-  background-color: transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-  padding-left: 13px;
-  padding-right: 13px;
+.button-settings:focus {
   border: 1px, solid, var(--theme-swith-color);
 }
 
@@ -244,7 +164,6 @@ body {
 }
 
 .main-header {
-  font-family: PlexMono-Bold;
   font-size: 157px;
   color: var(--pink);
   text-shadow: 4px 4px var(--main-head-text);
@@ -283,9 +202,7 @@ body {
     right: 10px;
   }
 }
-.header-disc > p {
-  font-family: PlexMono-Bold;
-  font-size: 18px;
+.header-disc > h2 {
   color: var(--font-color);
   background-color: var(--purple);
   text-align: left;
@@ -332,8 +249,6 @@ body {
 }
 
 .lamp-text {
-  font-family: PlexMono-Reg;
-  font-size: 18px;
   width: 33px;
   color: var(--purple);
   padding: 0;
@@ -375,13 +290,11 @@ body {
   @media (width: 375px) {
     padding-top: 107px;
     padding-left: 10px;
-    padding-right: 10px;;
+    padding-right: 10px;
   }
 }
 
 .why {
-  font-family: PlexMono-Bold;
-  font-size: 18px;
   color: var(--header-section-text);
   width: 314.96px;
   padding: 0;
@@ -399,43 +312,33 @@ body {
   }
 }
 
+.marg-10-b {
+  margin-bottom: 10px;
+}
+
+.marg-10-t {
+  margin-top: 10px;
+}
+
 .first_text {
   display: flex;
   flex-direction: column;
   width: 648.92px;
-  margin-bottom: 10px;
   @media (width: 768px) {
     width: 472px;
   }
   @media (width: 375px) {
     width: 100%;
-  } 
-}
-
-.second_text {
-  display: flex;
-  flex-direction: column;
-  width: 648.92px;
-  margin-top: 10px;
-  @media (width: 768px) {
-    width: 472px;
   }
-  @media (width: 375px) {
-    width: 100%;
-  } 
 }
 
 .header-text {
-  font-family: PlexMono-Bold;
-  font-size: 18px;
   color: var(--font-color);
   background-color: var(--purple);
   margin: 0;
 }
 
 .text-p-first {
-  font-family: PlexMono-Reg;
-  font-size: 18px;
   color: var(--liter);
   margin: 0;
   margin-top: 10px;
@@ -457,7 +360,6 @@ body {
 }
 
 /* Second section */
-
 .second_section {
   width: 1024px;
   margin: 0;
@@ -494,8 +396,6 @@ body {
 }
 
 .heder-second {
-  font-family: PlexMono-Bold;
-  font-size: 18px;
   color: var(--header-section-text);
   width: 315px;
   padding: 0;
@@ -510,8 +410,6 @@ body {
 }
 
 .text-p-second {
-  font-family: PlexMono-Reg;
-  font-size: 18px;
   color: var(--liter);
   margin: 0;
   margin-top: 10px;
@@ -562,7 +460,6 @@ body {
 }
 
 /* Third section */
-
 .third_section {
   width: 1024px;
   margin: 0;
@@ -594,8 +491,6 @@ body {
   position: absolute;
   top: 60px;
   left: 20px;
-  font-family: PlexMono-Bold;
-  font-size: 18px;
   color: var(--header-section-text);
   margin: 0;
   padding: 0;
@@ -625,8 +520,6 @@ body {
 
 .header-text-h {
   background-color: var(--purple);
-  font-family: PlexMono-Bold;
-  font-size: 18px;
   color: var(--font-color);
   text-align: left;
   width: 100%;
@@ -635,8 +528,6 @@ body {
 }
 
 .header-text- {
-  font-family: PlexMono-Reg;
-  font-size: 18px;
   color: var(--font-color);
   text-align: left;
   width: 100%;
@@ -646,8 +537,6 @@ body {
 }
 
 .text-p-third {
-  font-family: PlexMono-Reg;
-  font-size: 18px;
   color: var(--liter);
   margin: 0;
   margin-top: 10px;
@@ -655,7 +544,6 @@ body {
 }
 
 /* Fourth section */
-
 .fourth_section {
   width: 1024px;
   margin: 0;
@@ -684,8 +572,6 @@ body {
 
 .fourth_header {
   background-color: var(--purple);
-  font-family: PlexMono-Bold;
-  font-size: 18px;
   color: var(--font-color);
   text-align: left;
   width: 100%;
@@ -794,14 +680,13 @@ body {
 }
 
 /* Footer section */
-
 .foot {
   width: 1024px;
   height: 768px;
   padding-top: 60px;
   @media (width: 768px) {
     width: 768px;
-    height: 1024px;    
+    height: 1024px;
   }
   @media (width: 375px) {
     width: 375px;
@@ -819,7 +704,6 @@ body {
 }
 
 .footer_text {
-  font-family: PlexMono-Bold;
   font-size: 157px;
   margin: 0;
   padding: 0;
