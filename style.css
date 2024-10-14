@@ -19,7 +19,7 @@
   --liter: #353430;
   --header-section-text: #353430;
   --theme-swith-color: #353430;
-  --background-image: url(/assets/images/cover-image-light.png);
+  --background-image: url(/assets/images/cover-image-light.svg);
 }
 
 .white-theme .lamp-text {
@@ -53,7 +53,7 @@
   --font-color: #000028;
   --liter: #f1b2ce;
   --theme-swith-color: #ff0070;
-  --background-image: url(./assets/images/cover-image-dark.png);
+  --background-image: url(./assets/images/cover-image-dark.svg);
 }
 
 body {
