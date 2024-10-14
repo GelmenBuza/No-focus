@@ -193,6 +193,10 @@ body {
   border: 1px, solid, var(--theme-swith-color);
 }
 
+.theme-auto:hover {
+  border: 1px, solid, var(--theme-swith-color);
+}
+
 .theme-b:focus {
   display: flex;
   font-family: PlexMono-Reg;
