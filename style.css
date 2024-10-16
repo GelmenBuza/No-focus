@@ -66,12 +66,12 @@ body {
 }
 
 .fonts-link-reg {
-  font-family: "PlexMono-Reg", "Times New Roman";
+  font-family: "PlexMono-Reg", Arial sans-serif;
   font-size: 18px;
 }
 
 .fonts-link-bold {
-  font-family: "PlexMono-Bold", "Times New Roman";
+  font-family: "PlexMono-Bold", Arial sans-serif;
   font-size: 18px;
 }
 
@@ -570,7 +570,6 @@ body {
   grid-template-areas:
     "first-img first-img second-img"
     "fourth-img third-img second-img"
-    "fourth-img fifth-img fifth-img"
     "fourth-img fifth-img fifth-img";
   gap: 20px;
   @media (width: 375px) {
